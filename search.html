@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Search</title>
+</head>
+<body>
+
+<h2>Product Search</h2>
+
+<input type="text" id="product" placeholder="Enter product">
+
+<button onclick="searchProduct()">Search</button>
+
+<p id="result"></p>
+
+<script>
+function searchProduct() {
+
+    var product = document.getElementById("product").value;
+
+    if (product == "Laptop" ||
+        product == "Mobile" ||
+        product == "Headphones") {
+
+        document.getElementById("result").innerHTML =
+        "Product found: " + product;
+
+    } else {
+
+        document.getElementById("result").innerHTML =
+        "Product not found";
+    }
+}
+</script>
+
+</body>
+</html>
